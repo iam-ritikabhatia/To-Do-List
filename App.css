@@ -1,0 +1,79 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.todo-list {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item span {
+  text-align: left;
+  margin-right: 10px; /* Margin between task text and delete button */
+  flex: 1;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: calc(100% - 120px); /* Adjust width to fit alongside the button */
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px; /* Padding for buttons */
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 100px; /* Ensure buttons are the same width */
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.add-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.add-button {
+  margin-left: 10px; /* Margin between input field and add button */
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
